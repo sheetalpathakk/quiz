@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "sans-serif";
+  box-sizing: border-box;
+}
+body {
+  background: rgb(1, 1, 67);
+}
+.bgm {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+.bgm h1 {
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+.quiz {
+  padding: 20px 0;
+}
+.quiz h2 {
+  font-size: 18px;
+  color: #001e4d;
+  margin-bottom: 20px;
+}
+.btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #222;
+  color: #fff;
+}
+#next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+.correct {
+  background: #9aeabc;
+}
+.incorrect {
+  background: #ff9393;
+}
+.hidden {
+  display: none;
+}
+.restart-btn {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+.restart-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Enhanced Result Styling */
+#result-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+#score-text {
+  font-size: 20px;
+  color: #001e4d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: scoreBounce 0.8s ease-in-out;
+}
+
+@keyframes scoreBounce {
+  0% {
+      transform: scale(0.8);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress-bar-fill {
+  height: 20px;
+  background-color: #001e4d;
+  width: 0;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
