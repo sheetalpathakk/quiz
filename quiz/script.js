@@ -25,6 +25,24 @@ const questions = [
             { text: "AHMEDABAD", correct: false },
             { text: "GANDHINAGAR", correct: true },
         ]
+    },
+    {
+        question: "What is the capital of UTTARPRADESH?",
+        answers: [
+            { text: "KANPUR", correct: false },
+            { text: "LUCKNOW", correct: true },
+            { text: "GAZIABAD", correct: false },
+            { text: "AYODHYA", correct: false },
+        ]
+    },
+    {
+        question: "Which of these is not a mountain?",
+        answers: [
+            { text: "K2", correct: false },
+            { text: "MAHENDRAGIRI", correct: false },
+            { text: "ANAIMUDI", correct: false },
+            { text: "WESTERN GHATS", correct: true },
+        ]
     }
 ];
 
